@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+  <html lang = "en">
+    <head> 
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title> Your share image </title>
+     {% load static %}
+     <link rel = "stylesheet" type = "text/css" href = "{% static "user_share_image.css" %}">
+     </head>
+
+     <body>
+
+      <section class ="container"> 
+
+
+      <div> 
+      <img src = "{% static "Login.png" %}" alt = "users-share-image">
+      </div>
+
+      <div> 
+     <a href = "{% static "Login.png" %}" download = "share_image"> Download your share image </a> 
+      </div> 
+
+
+      <div> 
+      <p>We use visual cryptography to authenticate our users.<br> Please download your share image and keep it safe. You will need it to login to your account. </p>
+       </div>
+
+
+        <div> 
+     <a class = "login" href = "{% url "login" %}" > Login </a> 
+      </div> 
+    
+    </section>
+   
+    </body>
+
+
+  </html>
