@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+  <html lang = "en">
+    <head>
+       <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Final Project </title>
+          {% load static %}                                                                 
+        <link rel = "stylesheet" type = "text/css" href = "{% static "homem.css" %}">
+       
+        <!-- Roboto Font -->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/e6b767b3c7.js" crossorigin="anonymous"></script>
+       
+       
+      </head>
+
+    <body>
+
+
+
+      <header>
+           <span> E-Online. </span>
+
+
+        <nav>
+
+
+          <input type = "checkbox" id = "menu-toogle" title = "toogle">
+          <label for = "menu-toogle" class = "menu-icon">
+            <span class = "span1 span"></span>
+            <span class = "span2 span"></span>
+            <span class = "span3 span"></span>
+          </label>
+
+          <ul class = "menu">
+
+            <li> <a href =""> Home </a> </li>
+            <li> <a href = ""> Category </a> </li>
+            <li> <a href = "{% url "dashboard" %}"> Dashboard  </a> </li>
+            <li> <a href ="{% url "login" %}">  Login </a> </li>
+          </ul>
+
+
+            <a href = "{% url "login" %}" class = "sign">  Sign In </a> 
+
+        </nav> 
+
+
+
+      </header>
+
+
+
+      
+
+
+      <section class = "section1">
+        <div>
+            <h1>  <span class = "span1">  Investing in <br> Knowledge and </span> <br> <span class = "span2"> Your Future </span></h1>
+
+            <p> Our E-learning program has been developed to help <br><br> you learn and understand visual cryptography.</p><br><br>
+
+            <div class = "inner-div1">
+
+               <a href = "{% url "register" %}" class = "inner-button">  Register </a> 
+
+               <span>  <h3 class = "h3"> 50+ </h3> <br> <span class = "inner-div-1">  Career Courses </span> </span>
+
+               <span>   <h3 class = "h3"> 1M+ </h3> <br> <span class = "inner-div-1">  Our Students </span> </span>
+
+            </div>
+
+        </div>
+
+
+        <div class = "image-div">
+            <img src ="{% static "student-image.jpg" %}" alt = "students-image" class = "image1">
+
+        </div>
+
+      </section>
+
+
+
+
+      <section class = "section2">
+
+
+
+      
+  <a href = "" class = "section-2-a"> 
+
+        <div class = "inner-box-1 box">
+
+            <i class="fa-solid fa-eraser"></i><br> 
+
+          <span class = "text">   UI/UX <br> Design </span>
+
+        </div>
+
+    </a>
+
+
+        <a href = "" class = "section-2-a"> 
+
+         <div class = "inner-box-2 box">
+
+            <i class="fa-solid fa-laptop-code"></i> <br> 
+
+          <span class = "text">   Web <br> Development </span>
+
+        </div>
+
+        </a>
+
+
+
+
+         <a href = "" class = "section-2-a"> 
+
+         <div class = "inner-box-3 box">
+
+            <i class="fa-solid fa-bullhorn"></i> <br> 
+
+           <span class = "text">   Digital <br> Marketing </span>
+
+        </div>
+
+        </a>
+
+
+    
+
+         <a href = "" class = "section-2-a"> 
+
+         <div class = "inner-box-4 box">
+
+            <i class="fa-solid fa-cubes"></i> <br>
+
+           <span class = "text">   Practical <br> Learning </span>
+
+        </div>
+
+        </a>
+
+
+
+         <a href = "{% url "dashboard" %}" class = "section-2-a"> 
+
+         <div class = "browse-all box">
+
+            <div class = "arrow">
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </div> <br>
+
+           <span class = "last">  Browse All </span> 
+
+           </div>
+          </a>
+
+
+        
+
+
+
+      </section>
+
+
+
+
+
+
+    
+            
+  
+  
+    </body>
+
+
+</html>

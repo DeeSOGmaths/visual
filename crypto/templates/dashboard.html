@@ -5,10 +5,104 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Dashboard </title>
         {% load static %}
-       <link rel = "stylesheet" type = "text/css" href = "{% static "login.css" %}">
+       <link rel = "stylesheet" type = "text/css" href = "{% static "dashboard.css" %}">
+
+       <!-- Roboto Font -->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
      </head>
 
      <body>
+
+
+       <header>
+           <span> E-Online. </span>
+
+
+        <nav>
+
+
+          <input type = "checkbox" id = "menu-toogle" title = "toogle">
+          <label for = "menu-toogle" class = "menu-icon">
+            <span class = "span1 span"></span>
+            <span class = "span2 span"></span>
+            <span class = "span3 span"></span>
+          </label>
+
+          <ul class = "menu">
+
+            <li> <a href ="{% url "home" %}"> Home </a> </li>
+            <li> <a href = ""> Category </a> </li>
+            <li> <a href = "{% url "dashboard" %}"> Dashboard </a> </li>
+            <li> <a href ="">  Blog </a> </li>
+          </ul>
+
+
+           
+
+        </nav> 
+
+
+
+      </header>
+
+
+
+
+
+      <section class = "section1">
+
+
+      
+        <div> 
+
+        <img src = "{% static "jumping.jpg" %}" alt = "Jumping-image"> 
+
+        </div>
+
+
+
+
+
+        <div> 
+
+        <h1> Visual Cryptography </h1> <br>
+
+        <p class = "italic"> Final Year Project - Oreoluwa Togun </p>
+
+        <p> Visual Cryptography is a cryptographic technique that <br>
+        
+            allows images or text to be encrypted in such a way that <br>
+          
+            the decryption can be performed directly by the human vi-<br>
+          
+            sual system, without the need for complex computations or <br>
+          
+            algorithms. <br><Br>
+            
+            This technique involves dividing an image into multiple shares<br>
+          
+            or transparencies, which are then combined to reveal the orig-<br>
+          
+            nal image. e.g For this project we accepted a users share image <br>
+          
+             during login which was combined with the share image created by<br> 
+            
+             the visual system in order to reveal the original image. If<br>
+            
+             the original image was created, after merge (validated) the user <br>
+             
+             gets authorized, else He/She is an unauthorized user.</p>
+
+        </div>
+
+
+       
+      </section>
+
+
+     
          
     
      </body>

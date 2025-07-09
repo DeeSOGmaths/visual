@@ -28,7 +28,14 @@ html{
     h1 {
         text-align: center;
         color: #333;
+         font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
     }
+
     img{
         width:300px;
         height:300px
@@ -43,6 +50,12 @@ html{
         cursor: pointer;
         border-radius: 3px;
         text-decoration:none;
+         font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
     
     }
     
@@ -62,10 +75,25 @@ html{
         cursor: pointer;
         border-radius: 3px;
         text-decoration:none;
+         font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
     
     }
     .login:hover{
           background-color: #031d05;
+    }
+
+    section div p{
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
     }
 }
 
@@ -93,6 +121,12 @@ html{
     h1 {
         text-align: center;
         color: #333;
+         font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
     }
     
      img{
@@ -108,6 +142,12 @@ html{
         cursor: pointer;
         border-radius: 3px;
         text-decoration:none;
+         font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
         
     }
     
@@ -126,6 +166,12 @@ html{
         cursor: pointer;
         border-radius: 3px;
         text-decoration:none;
+         font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
     }
     .login:hover{
           background-color: #031d05;
@@ -158,6 +204,12 @@ html{
     h1 {
         text-align: center;
         color: #333;
+         font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
     }
 
      img{
@@ -174,6 +226,12 @@ html{
         cursor: pointer;
         border-radius: 3px;
         text-decoration:none;
+         font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
         
     }
     
@@ -193,6 +251,12 @@ html{
         cursor: pointer;
         border-radius: 3px;
         text-decoration:none;
+         font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
         
     }
     .login:hover{

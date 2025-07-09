@@ -59,17 +59,15 @@ def login(request,):
         
         register = RegistrationModel.objects.filter(email=email,password=password).first()
 
-        if register.email == email:
-            if register.password == password:
-                if (company_share_hash == users_share_hash):
+        if register:
+            if (company_share_hash == users_share_hash):
                     messages.success(request, "Your encrypted image was validated successfully, Welcome!")
                     return redirect(reverse("dashboard"))
-                else:
-                    messages.error(request, "Your share image dosen't match ours, visual decryption failed!")
             else:
-                 messages.error(request, "You entered a wrong password, Please retry!")
+                    messages.error(request, "Your share image dosen't match ours, visual decryption failed!")
         else:
-             messages.error(request, "Your email isn't correct, Please retry!")
+                 messages.error(request, "You entered a wrong password or email, Please retry!")
+       
 
     else:
         login = LoginForm()
@@ -81,6 +79,15 @@ def dashboard(request):
 
 def share(request):
     return render(request, "user_share_image.html")
+
+
+
+def home(request):
+    return render(request, "home.html")
+
+
+
+     
 
 
                 
